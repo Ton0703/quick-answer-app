@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .questiom-container {
+    position: relative;
+    width: 500px;
+    height: 163px;
+    display: flex;
+    flex-direction: column;
+
+    .other {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      visibility: hidden;
+    }
+
+    .cur {
+      .question {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 0.3s ease;
+        visibility: visible;
+      }
+    }
+  }
+}
